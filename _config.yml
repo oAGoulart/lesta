@@ -1,0 +1,14 @@
+# Jekyll configuration file for Lesta
+
+title: Lesta
+description: Markdown and SCSS only Jekyll theme for Github Pages.
+baseurl: /lesta
+
+# Caution with the configurations below
+exclude: [
+  Gemfile.lock,
+  lesta.gemspec,
+  README.md,
+  CHANGELOG.md,
+  Gemfile, vendor, scripts
+]

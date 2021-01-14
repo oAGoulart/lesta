@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+$content-gap: 64px !default;
+$content-offset: (2 * $content-gap) !default;
+$content-break: 960px + (2 * $content-gap) !default;
+
+body {
+  background-color: $background;
+  color: $text;
+  font-family: $family-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: auto;
+
+  .button {
+    border: 0.1rem solid $primary;
+    border-radius: 0.1rem;
+    color: $primary;
+    display: inline-block;
+    font-family: $family-sans;
+    padding: 0.5rem 1rem;
+    text-decoration: inherit;
+
+    &:active,
+    &:hover {
+      background-color: $primary;
+      color: $primary-invert;
+    }
+
+    &.is-invert {
+      background-color: $primary;
+      color: $primary-invert;
+
+      &:active,
+      &:hover {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+  }
+
+  a {
+    color: $link;
+    text-decoration: inherit;
+
+    &:hover {
+      color: $link-invert;
+    }
+  }
+
+  blockquote,
+  dl,
+  ol,
+  p,
+  pre,
+  table,
+  ul {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  blockquote {
+    background-color: $quotes;
+    border-left: 0.25em solid $border;
+    color: $foreground;
+    padding: 0 1em;
+    text-align: left;
+
+    &>:first-child {
+      margin-top: 0;
+    }
+
+    &>:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  dl,
+  ol,
+  ul {
+    text-align: left;
+  }
+
+  hr {
+    border: 0.1rem solid $border;
+    margin: 3rem auto;
+    padding: 0;
+    width: 8rem;
+  }
+
+  img {
+    max-width: 100%;
+    box-sizing: initial;
+    background-color: $background;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-family: $family-sans;
+  }
+
+  table,
+  td,
+  th {
+    border: 0.1rem solid $border;
+  }
+
+  tbody tr:nth-child(even),
+  thead tr:nth-child(odd) {
+    background-color: $border;
+  }
+
+  td,
+  th {
+    padding: 0.5rem 1rem;
+  }
+
+  &.is-page {
+    height: 100vh;
+  }
+
+  &>* {
+    margin: 0rem auto;
+    padding: 0 1rem;
+  }
+
+  &>*:last-child {
+    padding-bottom: 4rem;
+  }
+
+  @media screen and (min-width: $content-break) {
+    max-width: $content-break - $content-offset;
+  }
+}
