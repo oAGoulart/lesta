@@ -7,4 +7,4 @@ bundle exec jekyll build
 #bundle exec htmlproofer ./_site --check-html --check-sri
 bundle exec rubocop -D
 ./scripts/validate.rb
-gem build vitrina.gemspec
+gem build lesta.gemspec
