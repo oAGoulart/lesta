@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.authors       = ['Augusto Goulart']
   s.email         = ['josegoulart.aluno@unipampa.edu.br']
 
-  s.summary       = 'Markdown and CSS only Jekyll theme'
+  s.summary       = 'Markdown and SCSS only Jekyll theme'
   s.homepage      = 'https://github.com/oAGoulart/lesta'
   s.license       = 'MIT'
 
@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
 
   s.platform = Gem::Platform::RUBY
+  s.required_ruby_version = '>= 2.5'
   s.add_runtime_dependency 'github-pages'
 
   s.add_development_dependency 'html-proofer', '~>3.15'

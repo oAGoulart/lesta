@@ -46,6 +46,11 @@ body {
     }
   }
 
+  .error {
+    margin-top: 4rem;
+    font-family: $family-sans;
+  }
+
   a {
     color: $link;
     text-decoration: inherit;
