@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.authors       = ['Augusto Goulart']
   s.email         = ['josegoulart.aluno@unipampa.edu.br']
 
-  s.summary       = 'Markdown and CSS only Jekyll theme'
+  s.summary       = 'Markdown and SCSS only Jekyll theme'
   s.homepage      = 'https://github.com/oAGoulart/lesta'
   s.license       = 'MIT'
 
