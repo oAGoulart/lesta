@@ -13,5 +13,5 @@ All notable changes to this project will be documented in this file.
 
 
 
-[unreleased]: https://github.com/oAGoulart/vitrina/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/oAGoulart/vitrina/releases/tag/v0.1.0
+[unreleased]: https://github.com/oAGoulart/lesta/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/oAGoulart/lesta/releases/tag/v0.1.0
